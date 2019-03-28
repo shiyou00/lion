@@ -12,8 +12,8 @@ var scss = require('gulp-sass');  //处理sass文件
 var browserSync = require('browser-sync'); //拥有实时重载服务器
 var reload = browserSync.reload;  //编译后重新刷新浏览器
 
-var pageSrc = './src/*.html';
-var pageDist = './';
+var pageSrc = './src/html/**/*.html';
+var pageDist = './dist/html/';
 var jsSrc = './src/js/**/*.js';
 var jsDist = './dist/js/';
 var cssSrc = './src/css/**/*.css';
@@ -87,11 +87,9 @@ gulp.task('serve', function() {
             index : "/index.html"  //将dist目录下的index.html作为入口页面访问
         }
     });
-    console.log(`启动地址：http://localhost:3000/dist/html/xxxx.html`);
 });
 
 //启动项目，命令:gulp start ,
-// 浏览器访问地址:http://localhost:3000/pages/index.html
 gulp.task('start',['clean'], function() {
     gulp.start(['build','serve']);
     gulp.watch(pageSrc, ['html']);
