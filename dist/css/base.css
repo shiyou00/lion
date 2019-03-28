@@ -1,0 +1,4 @@
+html, body {
+  background: red; }
+  html a, body a {
+    color: #fff; }
