@@ -38,9 +38,6 @@ gulp.task('js', function() {  //拷贝压缩js
         .pipe(jsFilter)
         // 这会输出一个未压缩过的版本
         .pipe(gulp.dest(jsDist))
-        // 这会输出一个压缩过的并且重命名未 foo.min.js 的文件
-        .pipe(uglify())
-        .pipe(rename({ extname: '.min.js' }))
         .pipe(jsFilter.restore)
         .pipe(gulp.dest(jsDist))
         .pipe(reload({ stream:true }));

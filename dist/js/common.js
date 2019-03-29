@@ -46,4 +46,10 @@ $(function(){
     }else{
         $('.case-box').show();
     }
+
+    Array.from($('.case-box')).forEach((item)=>{
+        const name = $(item).attr('data-case');
+        const h = $(item).height();
+        console.log(name,h);
+    })
 });

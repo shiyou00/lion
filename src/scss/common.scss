@@ -8,7 +8,7 @@
   word-break: initial;
   width: 100%;
   .case{
-    flex:1;
+    width: 300px;
     background: pink;
     .case-main{
       background-color: lightblue;
@@ -21,7 +21,7 @@
     }
   }
   .handle{
-    flex:2;
+    flex:1;
     margin-left:20px;
     button{
       padding:4px 10px;
