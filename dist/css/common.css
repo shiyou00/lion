@@ -1,0 +1,36 @@
+.case-box {
+  display: none; }
+
+.show-case-wrap {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 20px;
+  background: #f4f4f4;
+  word-break: initial;
+  width: 100%; }
+  .show-case-wrap .case {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: pink; }
+    .show-case-wrap .case .case-main {
+      background-color: lightblue; }
+      .show-case-wrap .case .case-main .case-item {
+        background-color: lightyellow;
+        border: 1px solid black;
+        margin: 4px;
+        text-align: center; }
+  .show-case-wrap .handle {
+    -webkit-box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    margin-left: 20px; }
+    .show-case-wrap .handle button {
+      padding: 4px 10px;
+      background: antiquewhite;
+      outline: none;
+      font-size: 1em; }
+      .show-case-wrap .handle button.active {
+        color: #fff;
+        background: blue; }

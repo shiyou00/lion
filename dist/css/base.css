@@ -373,6 +373,8 @@ html {
       .container main .sidebar .sidebar-inner .sidebar-heading {
         font-size: 18px;
         padding-bottom: 24px; }
+      .container main .sidebar .sidebar-inner .nav-sidebar li {
+        margin-bottom: 12px; }
   .container main .content {
     height: 100%;
     padding: 56px 0 0 240px; }
