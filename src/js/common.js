@@ -9,9 +9,14 @@ $(function(){
         const $btns = $this.parent('.handle-item').find('button');
 
         if($(this).attr('data-item')){
-            // 说明是作用在项目上
-            const $itemNum = $this.attr('data-item') - 1;
-            $case_main.find('.case-item').eq($itemNum).css(attr,text);
+            if(!isNaN(Number($(this).attr('data-item')))){
+                // 说明是作用在单个项目上
+                const $itemNum = $this.attr('data-item') - 1;
+                $case_main.find('.case-item').eq($itemNum).css(attr,text);
+            }else{
+                // data-item === children 时表明作用于全体子项目
+                $case_main.find('.case-item').css(attr,text);
+            }
         }else{
             $case_main.css(attr,text);
         }

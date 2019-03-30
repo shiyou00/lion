@@ -33,14 +33,14 @@ gulp.task('html', function() {  //拷贝html
 var  jsFilter = filter([jsSrc, '!src/js/**/*.min.js'], {restore: true});
 gulp.task('js', function() {  //拷贝压缩js
     return gulp.src(jsSrc)
-        .pipe(changed(jsDist))
+        // .pipe(changed(jsDist))
         .pipe(cleanDest(jsDist))//先清空后生成
-        .pipe(jsFilter)
+        // .pipe(jsFilter)
         // 这会输出一个未压缩过的版本
+        // .pipe(gulp.dest(jsDist))
+        // .pipe(jsFilter.restore)
         .pipe(gulp.dest(jsDist))
-        .pipe(jsFilter.restore)
-        .pipe(gulp.dest(jsDist))
-        .pipe(reload({ stream:true }));
+        // .pipe(reload({ stream:true }));
 });
 gulp.task('css', function() {  //拷贝压缩css
     return gulp.src(cssSrc)
