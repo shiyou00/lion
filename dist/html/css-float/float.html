@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML" />
+    <meta name="description" content="Free Web tutorials on HTML, CSS, JavaScript" />
+    <meta name="author" content="frank">
+    <meta name="copyright" content="MIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <title>float</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+
+<div class="case-box" data-case="f1">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item">item1</div>
+                <div class="case-item">item2</div>
+                <div class="case-item">item3</div>
+                <div class="case-item">item4</div>
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>float</p>
+                <button data-item="children" data-type="float">left</button>
+                <button data-item="children" data-type="float">right</button>
+                <button data-item="children" data-type="float">none</button>
+                <button data-item="children" data-type="float">inherit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f2">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item" style="width:180px;margin:0;">item1</div>
+                <div class="case-item" style="width:180px;margin:0;">item2</div>
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>float(item1)</p>
+                <button data-item="1" data-type="float">left</button>
+                <button data-item="1" data-type="float">right</button>
+                <button data-item="1" data-type="float">none</button>
+                <button data-item="1" data-type="float">inherit</button>
+            </div>
+            <div class="handle-item">
+                <p>float(item2)</p>
+                <button data-item="2" data-type="float">left</button>
+                <button data-item="2" data-type="float">right</button>
+                <button data-item="2" data-type="float">none</button>
+                <button data-item="2" data-type="float">inherit</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-bottom(item1)</p>
+                <button data-item="1" data-type="margin-bottom">10px</button>
+                <button data-item="1" data-type="margin-bottom">0</button>
+                <button data-item="1" data-type="margin-bottom">-10px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-top(item2)</p>
+                <button data-item="2" data-type="margin-top">10px</button>
+                <button data-item="2" data-type="margin-top">0</button>
+                <button data-item="2" data-type="margin-top">-10px</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f3">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="border: 2px solid blue; padding:10px 0;">
+                父容器
+                <div class="case-item">item1（子容器）</div>
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>float(父容器)</p>
+                <button data-type="float">left</button>
+                <button data-type="float">right</button>
+                <button data-type="float">none</button>
+            </div>
+            <div class="handle-item">
+                <p>float(item1)</p>
+                <button data-item="1" data-type="float">left</button>
+                <button data-item="1" data-type="float">right</button>
+                <button data-item="1" data-type="float">none</button>
+            </div>
+            <div class="handle-item">
+                <p>width(item1)</p>
+                <button data-item="1" data-type="width">auto</button>
+                <button data-item="1" data-type="width">100px</button>
+                <button data-item="1" data-type="width">0</button>
+            </div>
+            <div class="handle-item">
+                <p>height(item1)</p>
+                <button data-item="1" data-type="height">auto</button>
+                <button data-item="1" data-type="height">100px</button>
+                <button data-item="1" data-type="height">0</button>
+            </div>
+            <div class="handle-item">
+                <p>border-width(item1)</p>
+                <button data-item="1" data-type="border-width">0</button>
+                <button data-item="1" data-type="border-width">2px</button>
+                <button data-item="1" data-type="border-width">10px</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f4">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="border: 2px solid blue; padding:10px 0;">
+                父容器父容器<span class="case-item">item1（子容器）</span>父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器父容器
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>float(item1)</p>
+                <button data-item="1" data-type="float">left</button>
+                <button data-item="1" data-type="float">right</button>
+                <button data-item="1" data-type="float">none</button>
+            </div>
+            <div class="handle-item">
+                <p>border-width(item1)</p>
+                <button data-item="1" data-type="border-width">0</button>
+                <button data-item="1" data-type="border-width">10px</button>
+                <button data-item="1" data-type="border-width">50px</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f5">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="border: 2px solid blue; padding:10px 0;">
+                <div class="case-item" style="height:50px;line-height: 50px;background: yellow;">item1</div>
+                <div class="case-item" style="height:50px;line-height: 50px;background: darkred;">item2</div>
+                <div class="case-item" style="height:50px;line-height: 50px;background: green;">item3</div>
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>float(父容器)</p>
+                <button data-type="float">left</button>
+                <button data-type="float">right</button>
+                <button data-type="float">none</button>
+            </div>
+            <div class="handle-item">
+                <p>float(item1)</p>
+                <button data-item="1" data-type="float">left</button>
+                <button data-item="1" data-type="float">right</button>
+                <button data-item="1" data-type="float">none</button>
+            </div>
+            <div class="handle-item">
+                <p>float(item2)</p>
+                <button data-item="2" data-type="float">left</button>
+                <button data-item="2" data-type="float">right</button>
+                <button data-item="2" data-type="float">none</button>
+            </div>
+            <div class="handle-item">
+                <p>float(item3)</p>
+                <button data-item="3" data-type="float">left</button>
+                <button data-item="3" data-type="float">right</button>
+                <button data-item="3" data-type="float">none</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</body>
+</html>
