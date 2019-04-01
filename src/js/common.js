@@ -10,7 +10,7 @@ $(function(){
 
         if($(this).attr('data-class')){
             // 添加class
-            $case_main.removeAttr('class');
+            $case_main.attr('class','case-main');
             $case_main.addClass($(this).attr('data-class'));
             $btns.removeClass("active");
             $(this).addClass("active");
