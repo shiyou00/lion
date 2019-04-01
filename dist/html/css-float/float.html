@@ -12,6 +12,14 @@
     <title>float</title>
     <link rel="stylesheet" href="../../css/base.css">
     <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        .clear:after{content:""; display: block; clear: both;}
+        .clear{zoom: 1;}
+
+        .clearfix:before,.clearfix:after{content:"";display:table;}
+        .clearfix:after{clear:both;}
+        .clearfix{zoom:1}
+    </style>
 </head>
 <body>
 
@@ -181,6 +189,66 @@
     </div>
 </div>
 
+<div class="case-box" data-case="f6">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="border: 2px solid blue; padding:10px 0;">
+                <div class="case-item" style="height:50px;line-height: 50px;background: yellow; float:left;">左浮动</div>
+                <div class="case-item" style="height:100px;line-height: 50px;background: darkred; float:right">右浮动</div>
+                <div class="case-item" style="height:50px;line-height: 50px;background: green;">item3</div>
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>clear(item3)</p>
+                <button data-item="3" data-type="clear">left</button>
+                <button data-item="3" data-type="clear">right</button>
+                <button data-item="3" data-type="clear">both</button>
+                <button data-item="3" data-type="clear">none</button>
+            </div>
+            <div class="handle-item">
+                <p>display(item3)</p>
+                <button data-item="3" data-type="display">inline</button>
+                <button data-item="3" data-type="display">inline-block</button>
+                <button data-item="3" data-type="display">block</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f7">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div style="height:50px;background: royalblue;margin-bottom:50px;">
+                上面的块布局
+            </div>
+            <div class="case-main" style="border: 2px solid blue; padding:10px 0;">
+                <div class="case-item" style="height:50px;line-height: 50px;background: yellow; float:left;">左浮动</div>
+                <div class="case-item" style="height:100px;line-height: 50px;background: darkred; float:right">右浮动</div>
+            </div>
+            <div style="height:50px;background: #b3d4fc;margin-top:50px;">
+                下面的块布局
+            </div>
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>父容器(清浮动)</p>
+                <button data-class="clear">清浮动版本1</button>
+                <button data-class="clearfix">清浮动版本2</button>
+            </div>
+            <div class="handle-item">
+                <p>父容器(margin-top)</p>
+                <button data-type="margin-top">20px</button>
+                <button data-type="margin-top">0</button>
+            </div>
+            <div class="handle-item">
+                <p>父容器(margin-bottom)</p>
+                <button data-type="margin-bottom">20px</button>
+                <button data-type="margin-bottom">0</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../js/common.js"></script>

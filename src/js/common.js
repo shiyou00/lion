@@ -8,6 +8,15 @@ $(function(){
         const $case_main = $top.find('.case-main');
         const $btns = $this.parent('.handle-item').find('button');
 
+        if($(this).attr('data-class')){
+            // 添加class
+            $case_main.removeAttr('class');
+            $case_main.addClass($(this).attr('data-class'));
+            $btns.removeClass("active");
+            $(this).addClass("active");
+            return false;
+        }
+
         if($(this).attr('data-item')){
             if(!isNaN(Number($(this).attr('data-item')))){
                 // 说明是作用在单个项目上
