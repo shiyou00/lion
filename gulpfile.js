@@ -14,6 +14,8 @@ var reload = browserSync.reload;  //编译后重新刷新浏览器
 
 var pageSrc = './src/html/**/*.html';
 var pageDist = './dist/html/';
+var imgSrc = './src/img/**/*';
+var imgDist = './dist/img/';
 var jsSrc = './src/js/**/*.js';
 var jsDist = './dist/js/';
 var cssSrc = './src/css/**/*.css';
@@ -27,6 +29,13 @@ gulp.task('html', function() {  //拷贝html
         .pipe(cleanDest(pageDist))//先清空后生成
         .pipe(gulp.dest(pageDist))
         .pipe(reload({ stream:true }));
+});
+
+gulp.task('img', function() {
+    return gulp.src(imgSrc)
+        .pipe(changed(imgDist))
+        .pipe(cleanDest(imgDist))//先清空后生成
+        .pipe(gulp.dest(imgDist))
 });
 
 //对已经压缩过的文件进行过滤，不再压缩
@@ -73,7 +82,7 @@ gulp.task('clean', function () {
 });
 
 //初始化时，批量执行多个操作
-gulp.task('build', ['html','scss', 'css','js']);
+gulp.task('build', ['html','scss', 'css','js','img']);
 
 //开启本地服务器监视文件改动
 gulp.task('serve', function() {
@@ -92,5 +101,6 @@ gulp.task('start',['clean'], function() {
     gulp.watch(pageSrc, ['html']);
     gulp.watch(sassSrc, ['scss']);
     gulp.watch(cssSrc, ['css']);
-    gulp.watch(jsSrc, ['js'])
+    gulp.watch(jsSrc, ['js']);
+    gulp.watch(imgSrc, ['img']);
 });
