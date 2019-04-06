@@ -1,5 +1,6 @@
 .case-box {
-  display: none; }
+  display: none;
+  margin-bottom: 20px; }
 
 .show-case-wrap {
   display: -webkit-inline-box;
