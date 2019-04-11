@@ -1,3 +1,4 @@
+@import "var";
 .case-box{
   display: none;
   margin-bottom:20px;
@@ -22,8 +23,13 @@
     }
   }
   .handle{
-    flex:1;
-    margin-left:20px;
+    .handle-item{
+      flex:1;
+      margin-bottom:8px;
+      p{
+        padding-bottom:4px;
+      }
+    }
     button{
       padding:4px 10px;
       background: antiquewhite;
@@ -33,6 +39,21 @@
         color:#fff;
         background: blue;
       }
+    }
+  }
+  .reset{
+    cursor: pointer;
+    width:40px;
+    height: 36px;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    background: $bg;
+    margin: 0 8px;
+    border-radius: 4px;
+    transition: .3s all ease-in-out;
+    &:hover{
+      background: #6aa6e2;
     }
   }
 }

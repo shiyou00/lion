@@ -18,14 +18,29 @@
         border: 1px solid black;
         margin: 4px;
         text-align: center; }
-  .show-case-wrap .handle {
+  .show-case-wrap .handle .handle-item {
     flex: 1;
-    margin-left: 20px; }
-    .show-case-wrap .handle button {
-      padding: 4px 10px;
-      background: antiquewhite;
-      outline: none;
-      font-size: 1em; }
-      .show-case-wrap .handle button.active {
-        color: #fff;
-        background: blue; }
+    margin-bottom: 8px; }
+    .show-case-wrap .handle .handle-item p {
+      padding-bottom: 4px; }
+  .show-case-wrap .handle button {
+    padding: 4px 10px;
+    background: antiquewhite;
+    outline: none;
+    font-size: 1em; }
+    .show-case-wrap .handle button.active {
+      color: #fff;
+      background: blue; }
+  .show-case-wrap .reset {
+    cursor: pointer;
+    width: 40px;
+    height: 36px;
+    text-align: center;
+    color: #fff;
+    line-height: 36px;
+    background: #167be0;
+    margin: 0 8px;
+    border-radius: 4px;
+    transition: .3s all ease-in-out; }
+    .show-case-wrap .reset:hover {
+      background: #6aa6e2; }

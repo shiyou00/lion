@@ -66,4 +66,8 @@ $(function(){
         const h = $(item).height();
         console.log(name,h);
     })
+    
+    $(".reset").on("click",function () {
+        history.go(0);
+    })
 });
