@@ -234,6 +234,162 @@
         </div>
     </div>
 </div>
+
+<style>
+    .f10 .test{
+        text-align: center;
+        line-height: 100px;
+    }
+</style>
+<div class="case-box f10" data-case="f10">
+    <div class="test" style="background-color: lightblue;width: 200px;">测试文字</div>
+</div>
+
+<style>
+    .f11 .parent{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .f11 .child{
+        width: 80px;
+        display: inline-block;
+    }
+</style>
+<div class="case-box f11" data-case="f11">
+    <div class="parent" style="background-color: gray; width:200px; height:100px;">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f12 .parent{
+        line-height: 200px;
+        text-align: center;
+        font-size:0;
+    }
+    .f12 .child{
+        vertical-align: middle;
+    }
+</style>
+<div class="case-box f12" data-case="f12">
+    <div class="parent" style="background-color: gray; width:200px;">
+        <img class="child" src="../../img/head.jpg" style="width:50px;" alt="test">
+    </div>
+</div>
+
+<style>
+    .f13 .parent{
+        display:table-cell;
+        vertical-align: middle;
+    }
+    .f13 .child{
+        display: table;
+        margin: 0 auto;
+    }
+</style>
+<div class="case-box f13" data-case="f13">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f14 .parent{
+        position: relative;
+    }
+    .f14 .child{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50px;
+        width: 80px;
+        margin: auto;
+    }
+</style>
+<div class="case-box f14" data-case="f14">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f15 .parent{
+        position: relative;
+    }
+    .f15 .child{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+</style>
+<div class="case-box f15" data-case="f15">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f16 .parent{
+        display: flex;
+    }
+    .f16 .child{
+        margin: auto;
+    }
+</style>
+<div class="case-box f16" data-case="f16">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f17 .parent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+<div class="case-box f17" data-case="f17">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f18 .parent{
+        display: grid;
+    }
+    .f18 .child{
+        align-self: center;
+        justify-self: center;
+    }
+</style>
+<div class="case-box f18" data-case="f18">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+<style>
+    .f19 .parent{
+        display: grid;
+        /*align-items: center;*/
+        /*justify-items: center;*/
+        align-content: center;
+        justify-content: center;
+    }
+</style>
+<div class="case-box f19" data-case="f19">
+    <div class="parent" style="background-color: lightgray; width:200px; height:100px; ">
+        <div class="child" style="background-color: lightblue;">测试文字</div>
+    </div>
+</div>
+
+
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../js/common.js"></script>
 </body>
