@@ -4,10 +4,10 @@ $(function(){
         const $this = $(this);
         const text = $this.text();
         const attr = $this.attr('data-type');
+        const prop = $this.attr('data-prop');
         const $top = $this.parents('.show-case-wrap');
         const $case_main = $top.find('.case-main');
         const $btns = $this.parent('.handle-item').find('button');
-
         if($(this).attr('data-class')){
             // 添加class
             $case_main.attr('class','case-main');
@@ -16,18 +16,32 @@ $(function(){
             $(this).addClass("active");
             return false;
         }
-
         if($(this).attr('data-item')){
             if(!isNaN(Number($(this).attr('data-item')))){
                 // 说明是作用在单个项目上
                 const $itemNum = $this.attr('data-item') - 1;
-                $case_main.find('.case-item').eq($itemNum).css(attr,text);
+                if(attr){
+                    $case_main.find('.case-item').eq($itemNum).css(attr,text);
+                }
+                if(prop){
+                    $case_main.find('.case-item').eq($itemNum).attr(prop,text);
+                }
             }else{
                 // data-item === children 时表明作用于全体子项目
-                $case_main.find('.case-item').css(attr,text);
+                if(attr){
+                    $case_main.find('.case-item').css(attr,text);
+                }
+                if(prop){
+                    $case_main.find('.case-item').attr(prop,text);
+                }
             }
         }else{
-            $case_main.css(attr,text);
+            if(attr){
+                $case_main.css(attr,text);
+            }
+            if(prop){
+                $case_main.attr(prop,text);
+            }
         }
 
         // 激活状态

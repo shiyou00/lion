@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML" />
+    <meta name="description" content="Free Web tutorials on HTML, CSS, JavaScript" />
+    <meta name="author" content="frank">
+    <meta name="copyright" content="MIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <title>svg</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+
+<div class="case-box" data-case="f1">
+    <div class="show-case-wrap">
+        <div class="case">
+            <svg class="case-main" version="1.1" id="drawing" width="200" height="100" xmlns="http://www.w3.org/2000/svg" dominant-baseline="auto">
+                <line x1="20" y1="20" x2="180" y2="20" stroke="#000"></line>
+                <text x="20" y="20" text-anchor="start">测试文字测试文字</text>
+            </svg>
+        </div>
+        <div class="reset">
+            重置
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>svg(dominant-baseline)</p>
+                <button data-prop="dominant-baseline">auto</button>
+                <button data-prop="dominant-baseline">use-script</button>
+                <button data-prop="dominant-baseline">no-change</button>
+                <button data-prop="dominant-baseline">reset-size</button>
+                <button data-prop="dominant-baseline">ideographic</button>
+                <button data-prop="dominant-baseline">alphabetic</button>
+                <button data-prop="dominant-baseline">hanging</button>
+                <button data-prop="dominant-baseline">mathematical</button>
+                <button data-prop="dominant-baseline">central</button>
+                <button data-prop="dominant-baseline">middle</button>
+                <button data-prop="dominant-baseline">text-after-edge</button>
+                <button data-prop="dominant-baseline">text-before-edge</button>
+                <button data-prop="dominant-baseline">inherit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f2">
+    <div class="show-case-wrap">
+        <div class="case">
+            <svg version="1.1" id="drawing" width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+                <path id="my_path" d="M 20,20 C 50 50, 160 50, 160 20" fill="none" stroke="black"></path>
+                <text id="textPath" class="case-main">
+                    <textPath xlink:href="#my_path">123456</textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="reset">
+            重置
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>x</p>
+                <button data-prop="x">20</button>
+                <button data-prop="x">50</button>
+                <button data-prop="x">100</button>
+            </div>
+            <div class="handle-item">
+                <p>y</p>
+                <button data-prop="y">20</button>
+                <button data-prop="y">50</button>
+                <button data-prop="y">100</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f3">
+    <div class="show-case-wrap">
+        <div class="case">
+            <svg version="1.1" id="drawing" width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+                <path id="my_path" d="M 20,20 C 50 50, 160 50, 160 20" fill="none" stroke="black"></path>
+                <text>
+                    <textPath class="case-main" id="textPath" xlink:href="#my_path" startOffset="0%">123456</textPath>
+                </text>
+            </svg>
+        </div>
+        <div class="reset">
+            重置
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>startOffset</p>
+                <button data-prop="startOffset">0</button>
+                <button data-prop="startOffset">20%</button>
+                <button data-prop="startOffset">50%</button>
+                <button data-prop="startOffset">80%</button>
+                <button data-prop="startOffset">100%</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</body>
+</html>
