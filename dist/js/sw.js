@@ -1,6 +1,6 @@
 var CACHE_NAME = 'my-site-cache-v1';
 var urlsToCache = [
-  '/myweb/lion/dist/css/base.css'
+  '/lion/dist/css/base.css'
 ];
 console.log("进入 service work");
 self.addEventListener('install', function(event) {
