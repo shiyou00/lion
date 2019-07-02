@@ -15,6 +15,19 @@ if (workbox) {
     new RegExp('.*\.(?:js|css)'),
     workbox.strategies.cacheFirst()
   );
+
+  workbox.routing.registerRoute(
+    /.*\.(?:png|jpg|jpeg|svg|gif)/g,
+    new workbox.strategies.CacheFirst({
+      cacheName: 'my-image-cache',
+      plugins: [
+        new workbox.expiration.Plugin({
+          maxEntries: 60, // 最大的缓存数，超过之后则走 LRU 策略清除最老最少使用缓存
+          maxAgeSeconds: 30 * 24 * 60 * 60, // 这只最长缓存时间为 30 天
+        })
+      ]
+    })
+  );
 } else {
   console.log(`Boo! workbox didn't load 😬`);
 }
