@@ -96,7 +96,7 @@ gulp.task('build', ['html','scss', 'css','js','img','font']);
 //开启本地服务器监视文件改动
 gulp.task('serve', function() {
     browserSync({
-        open:false,
+        open:true,
         server: {
             baseDir: '',
             index : "/index.html"  //将dist目录下的index.html作为入口页面访问
