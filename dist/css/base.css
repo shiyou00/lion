@@ -19,10 +19,10 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline; }
-div{
-    margin:0;
-    padding:0;
-}
+
+div {
+  margin: 0;
+  padding: 0; }
 
 /* make sure to set some focus styles for accessibility */
 :focus {
