@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML" />
+    <meta name="description" content="Free Web tutorials on HTML, CSS, JavaScript" />
+    <meta name="author" content="frank">
+    <meta name="copyright" content="MIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <title>overflow</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+</head>
+<body>
+
+<div class="case-box" data-case="f1">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="width:150px;height:150px;border: 1px solid black;border-radius: 10px;padding: 5px;background-color: lightgreen;">
+                <div style="width:200px;height:100px;background-color: blue;">
+                    测试内容
+                </div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>overflow</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+                <button data-type="overflow">scroll</button>
+                <button data-type="overflow">auto</button>
+                <button data-type="overflow">inherit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f2">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="width:150px;height:150px;border: 1px solid black;border-radius: 10px;padding: 5px;background-color: lightgreen;">
+                <div class="case-item" style="width:200px;height:100px;background-color: blue;">
+                    测试内容
+                </div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>父级的 overflow</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+                <button data-type="overflow">scroll</button>
+                <button data-type="overflow">auto</button>
+                <button data-type="overflow">inherit</button>
+            </div>
+            <div class="handle-item">
+                <p>子级的 position</p>
+                <button data-item="1" data-type="position">absolute</button>
+                <button data-item="1" data-type="position">fixed</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f3">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="width:150px;height:150px;border: 1px solid black;border-radius: 10px;padding: 5px;background-color: lightgreen;">
+                <div class="case-item" style="width:200px;height:100px;background-color: blue;">
+                    测试内容
+                </div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>父级的 overflow</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+                <button data-type="overflow">scroll</button>
+                <button data-type="overflow">auto</button>
+                <button data-type="overflow">inherit</button>
+            </div>
+            <div class="handle-item">
+                <p>父级的 position</p>
+                <button data-type="position">absolute</button>
+                <button data-type="position">fixed</button>
+                <button data-type="position">relative</button>
+            </div>
+            <div class="handle-item">
+                <p>子级的 position</p>
+                <button data-item="1" data-type="position">absolute</button>
+                <button data-item="1" data-type="position">fixed</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f4">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="width:150px;border: 1px solid black;border-radius: 10px;padding: 5px;background-color: lightgreen;">
+                <div class="case-item" style="width:100px;height:100px;background-color: blue;float:left;">
+                    测试内容
+                </div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>父级的 overflow</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+                <button data-type="overflow">scroll</button>
+                <button data-type="overflow">auto</button>
+                <button data-type="overflow">inherit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f5">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="width:150px;height:80px;border-radius: 10px;background-color: lightgreen;">
+                <div class="case-item" style="background-color: blue;margin-top:50px;">
+                    测试内容
+                </div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>父级的 overflow</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+                <button data-type="overflow">scroll</button>
+                <button data-type="overflow">auto</button>
+                <button data-type="overflow">inherit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f6">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="width:280px;height:80px;border-radius: 10px;background-color: lightgreen;">
+                <div class="case-item" style="width:100px;background-color: blue;float:left">
+                    左侧文字
+                </div>
+                <div class="case-item" style="background-color: lightyellow;width:100px;">
+                    右侧文字
+                </div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>overflow</p>
+                <button data-item="2" data-type="overflow">visible</button>
+                <button data-item="2" data-type="overflow">hidden</button>
+                <button data-item="2" data-type="overflow">scroll</button>
+                <button data-item="2" data-type="overflow">auto</button>
+                <button data-item="2" data-type="overflow">inherit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</body>
+</html>
