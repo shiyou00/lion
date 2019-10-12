@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="HTML, CSS, XML" />
+    <meta name="description" content="Free Web tutorials on HTML, CSS, JavaScript" />
+    <meta name="author" content="frank">
+    <meta name="copyright" content="MIT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="renderer" content="webkit">
+    <title>margin</title>
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/common.css">
+    <style>
+        .show-case-wrap .case .case-main .case-item{
+            margin: 0;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="case-box" data-case="f1">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item">item1</div>
+                <div class="case-item">item2</div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>margin-bottom(item1)</p>
+                <button data-item="1" data-type="margin-bottom">0</button>
+                <button data-item="1" data-type="margin-bottom">10px</button>
+                <button data-item="1" data-type="margin-bottom">20px</button>
+                <button data-item="1" data-type="margin-bottom">-10px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-top(item2)</p>
+                <button data-item="2" data-type="margin-top">0</button>
+                <button data-item="2" data-type="margin-top">10px</button>
+                <button data-item="2" data-type="margin-top">20px</button>
+                <button data-item="2" data-type="margin-top">-10px</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f2">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="height:50px;">
+                <div class="case-item" style="border:1px solid blue">item1</div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>margin-top(item1)</p>
+                <button data-item="1" data-type="margin-top">0</button>
+                <button data-item="1" data-type="margin-top">20px</button>
+            </div>
+            <div class="handle-item">
+                <p>overflow(父元素)</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+            </div>
+            <div class="handle-item">
+                <p>padding-top(父元素)</p>
+                <button data-type="padding-top">1em</button>
+                <button data-type="padding-top">0</button>
+            </div>
+            <div class="handle-item">
+                <p>border-top(父元素)</p>
+                <button data-type="border-top">1px solid black</button>
+                <button data-type="border-top">none</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f3">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item"></div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>margin(item1)</p>
+                <button data-item="1" data-type="margin">0</button>
+                <button data-item="1" data-type="margin">20px 0</button>
+            </div>
+            <div class="handle-item">
+                <p>overflow(父元素)</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f4">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item"></div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>margin(item1)</p>
+                <button data-item="1" data-type="margin">0</button>
+                <button data-item="1" data-type="margin">20px 0</button>
+            </div>
+            <div class="handle-item">
+                <p>overflow(父元素)</p>
+                <button data-type="overflow">visible</button>
+                <button data-type="overflow">hidden</button>
+            </div>
+            <div class="handle-item">
+                <p>border(item1)</p>
+                <button data-item="1" data-type="border">none</button>
+                <button data-item="1" data-type="border">1px solid #ddd</button>
+            </div>
+            <div class="handle-item">
+                <p>padding(item1)</p>
+                <button data-item="1" data-type="padding">1px</button>
+                <button data-item="1" data-type="padding">0</button>
+            </div>
+            <div class="handle-item">
+                <p>height(item1)</p>
+                <button data-item="1" data-type="height">1px</button>
+                <button data-item="1" data-type="height">0</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f5">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item" style="height:50px;margin-bottom:25px">margin-bottom:25px</div>
+                <div class="case-item" style="height:50px;margin-top:25px">margin-top:25px</div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>-webkit-margin-collapse(上)</p>
+                <button data-item="1" data-type="-webkit-margin-collapse">collapse</button>
+                <button data-item="1" data-type="-webkit-margin-collapse">discard</button>
+                <button data-item="1" data-type="-webkit-margin-collapse">separate</button>
+            </div>
+            <div class="handle-item">
+                <p>-webkit-margin-collapse(下)</p>
+                <button data-item="2" data-type="-webkit-margin-collapse">collapse</button>
+                <button data-item="2" data-type="-webkit-margin-collapse">discard</button>
+                <button data-item="2" data-type="-webkit-margin-collapse">separate</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f6">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="position: relative;height:100px;">
+                <div class="case-item" style="width:50px;height:50px; position: absolute; top:0;bottom:0;left:0;right:0;">item1</div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>margin(item1)</p>
+                <button data-item="1" data-type="margin">0 auto</button>
+                <button data-item="1" data-type="margin">auto 0</button>
+                <button data-item="1" data-type="margin">auto</button>
+                <button data-item="1" data-type="margin">0</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f7">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main">
+                <div class="case-item" style="line-height: 50px;">上面的块</div>
+                <div class="case-item" style="line-height: 50px;background: brown">测试的块item2</div>
+                <div class="case-item" style="line-height: 50px;">下面的块</div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>display(item2)</p>
+                <button data-item="2" data-type="display">block</button>
+                <button data-item="2" data-type="display">inline</button>
+                <button data-item="2" data-type="display">none</button>
+                <button data-item="2" data-type="display">inline-block</button>
+            </div>
+            <div class="handle-item">
+                <p>vertical-align(item2)</p>
+                <button data-item="2" data-type="vertical-align">baseline</button>
+                <button data-item="2" data-type="vertical-align">top</button>
+                <button data-item="2" data-type="vertical-align">bottom</button>
+                <button data-item="2" data-type="vertical-align">middle</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-top(item2)</p>
+                <button data-item="2" data-type="margin-top">0</button>
+                <button data-item="2" data-type="margin-top">20px</button>
+                <button data-item="2" data-type="margin-top">50px</button>
+                <button data-item="2" data-type="margin-top">-20px</button>
+                <button data-item="2" data-type="margin-top">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-bottom(item2)</p>
+                <button data-item="2" data-type="margin-bottom">0</button>
+                <button data-item="2" data-type="margin-bottom">20px</button>
+                <button data-item="2" data-type="margin-bottom">50px</button>
+                <button data-item="2" data-type="margin-bottom">-20px</button>
+                <button data-item="2" data-type="margin-bottom">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-left(item2)</p>
+                <button data-item="2" data-type="margin-left">0</button>
+                <button data-item="2" data-type="margin-left">20px</button>
+                <button data-item="2" data-type="margin-left">50px</button>
+                <button data-item="2" data-type="margin-left">-20px</button>
+                <button data-item="2" data-type="margin-left">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-right(item2)</p>
+                <button data-item="2" data-type="margin-right">0</button>
+                <button data-item="2" data-type="margin-right">20px</button>
+                <button data-item="2" data-type="margin-right">50px</button>
+                <button data-item="2" data-type="margin-right">-20px</button>
+                <button data-item="2" data-type="margin-right">-50px</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f8">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="overflow: hidden">
+                <div class="case-item" style="width:50px;line-height: 50px;">item1</div>
+                <div class="case-item" style="width:50px;line-height: 50px;background: blue;color:#fff;">item2</div>
+            </div>
+        </div>
+        <div class="reset">重置</div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>display(item1)</p>
+                <button data-item="1" data-type="display">block</button>
+                <button data-item="1" data-type="display">inline</button>
+                <button data-item="1" data-type="display">none</button>
+                <button data-item="1" data-type="display">inline-block</button>
+            </div>
+            <div class="handle-item">
+                <p>display(item2)</p>
+                <button data-item="2" data-type="display">block</button>
+                <button data-item="2" data-type="display">inline</button>
+                <button data-item="2" data-type="display">none</button>
+                <button data-item="2" data-type="display">inline-block</button>
+            </div>
+
+
+            <div class="handle-item">
+                <p>margin-top(item1)</p>
+                <button data-item="1" data-type="margin-top">0</button>
+                <button data-item="1" data-type="margin-top">20px</button>
+                <button data-item="1" data-type="margin-top">50px</button>
+                <button data-item="1" data-type="margin-top">-20px</button>
+                <button data-item="1" data-type="margin-top">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-bottom(item1)</p>
+                <button data-item="1" data-type="margin-bottom">0</button>
+                <button data-item="1" data-type="margin-bottom">20px</button>
+                <button data-item="1" data-type="margin-bottom">50px</button>
+                <button data-item="1" data-type="margin-bottom">-20px</button>
+                <button data-item="1" data-type="margin-bottom">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-left(item1)</p>
+                <button data-item="1" data-type="margin-left">0</button>
+                <button data-item="1" data-type="margin-left">20px</button>
+                <button data-item="1" data-type="margin-left">50px</button>
+                <button data-item="1" data-type="margin-left">-20px</button>
+                <button data-item="1" data-type="margin-left">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-right(item1)</p>
+                <button data-item="1" data-type="margin-right">0</button>
+                <button data-item="1" data-type="margin-right">20px</button>
+                <button data-item="1" data-type="margin-right">50px</button>
+                <button data-item="1" data-type="margin-right">-20px</button>
+                <button data-item="1" data-type="margin-right">-50px</button>
+            </div>
+
+
+            <div class="handle-item">
+                <p>margin-top(item2)</p>
+                <button data-item="2" data-type="margin-top">0</button>
+                <button data-item="2" data-type="margin-top">20px</button>
+                <button data-item="2" data-type="margin-top">50px</button>
+                <button data-item="2" data-type="margin-top">-20px</button>
+                <button data-item="2" data-type="margin-top">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-bottom(item2)</p>
+                <button data-item="2" data-type="margin-bottom">0</button>
+                <button data-item="2" data-type="margin-bottom">20px</button>
+                <button data-item="2" data-type="margin-bottom">50px</button>
+                <button data-item="2" data-type="margin-bottom">-20px</button>
+                <button data-item="2" data-type="margin-bottom">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-left(item2)</p>
+                <button data-item="2" data-type="margin-left">0</button>
+                <button data-item="2" data-type="margin-left">20px</button>
+                <button data-item="2" data-type="margin-left">50px</button>
+                <button data-item="2" data-type="margin-left">-20px</button>
+                <button data-item="2" data-type="margin-left">-50px</button>
+            </div>
+            <div class="handle-item">
+                <p>margin-right(item2)</p>
+                <button data-item="2" data-type="margin-right">0</button>
+                <button data-item="2" data-type="margin-right">20px</button>
+                <button data-item="2" data-type="margin-right">50px</button>
+                <button data-item="2" data-type="margin-right">-20px</button>
+                <button data-item="2" data-type="margin-right">-50px</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .f9 .box{
+        position:relative;
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+        border: 2px solid black;
+    }
+    .f9 .out{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+    }
+    .f9 .in{
+        height: 100px;
+        width: 100px;
+        background-color: pink;
+        margin-left: -50%;
+        margin-top: -50%;
+    }
+</style>
+<div class="case-box f9" data-case="f9">
+    <div class="box">
+        <div class="out">
+            <div class="in">测试内容</div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .f10 ul{
+        margin: 0;
+        padding: 0;
+        list-style:none;
+    }
+    .f10 .box{
+        width: 200px;
+        background-color: pink;
+    }
+    .f10 .list{
+        overflow: hidden;
+        margin-right: -10px;
+    }
+    .f10 .in{
+        float: left;
+        width: 60px;
+        height: 100px;
+        background-color: lightgreen;
+        margin-right: 10px;
+    }
+</style>
+<div class="case-box f10" data-case="f10">
+    <div class="box">
+        <ul class="list">
+            <li class="in">1</li>
+            <li class="in">2</li>
+            <li class="in">3</li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    html,body,.f11{
+        height: 100%;
+    }
+    body{
+        margin: 0;
+    }
+    .f11 .main{
+        width: 100%;
+        height: 100%;
+        float: left;
+    }
+    .f11 .main .in{
+        margin: 0 110px;
+        background-color: pink;
+        height: 100%;
+    }
+    .f11 .left,.right{
+        height: 100%;
+        width: 100px;
+        float: left;
+        background-color: lightgreen;
+    }
+    .f11 .left{
+        margin-left: -100%;
+    }
+    .f11 .right{
+        margin-left: -100px;
+    }
+</style>
+<div class="case-box f11" data-case="f11">
+    <div class="main">
+        <div class="in"></div>
+    </div>
+    <div class="left"></div>
+    <div class="right"></div>
+</div>
+
+<script src="../../js/jquery-3.3.1.min.js"></script>
+<script src="../../js/common.js"></script>
+</body>
+</html>
