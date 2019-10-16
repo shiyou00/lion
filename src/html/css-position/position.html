@@ -242,6 +242,126 @@
     </div>
 </div>
 
+<style>
+    #case-main .show1,#case-main .show2,#case-main .show3,#case-main .show4{
+        position: absolute;
+        padding: 2px;
+        background-color: pink;
+        width: 40px;
+        height: 160px;
+        line-height: 300px;
+        text-align: right;
+    }
+    #case-main .show2{
+        background-color: lightgreen;
+        width: 80px;
+        height: 120px;
+        line-height: 220px;
+    }
+    #case-main .show3{
+        background-color: lightblue;
+        width: 120px;
+        height: 80px;
+        line-height: 140px;
+    }
+    #case-main .show4{
+        background-color: lightyellow;
+        width: 160px;
+        height: 40px;
+        line-height: 60px;
+    }
+</style>
+
+<div class="case-box" data-case="f5">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" id="case-main" style="position: relative;height:300px;">
+                <div class="case-item show1">1</div>
+                <div class="case-item show2">2</div>
+                <div class="case-item show3">3</div>
+                <div class="case-item show4">4</div>
+            </div>
+        </div>
+        <div class="reset">
+            重置
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>序号1</p>
+                <button data-item="1" data-type="z-index">auto</button>
+                <button data-item="1" data-type="z-index">-1</button>
+                <button data-item="1" data-type="z-index">0</button>
+                <button data-item="1" data-type="z-index">1</button>
+                <button data-item="1" data-type="z-index">2</button>
+                <button data-item="1" data-type="z-index">3</button>
+                <button data-item="1" data-type="z-index">4</button>
+            </div>
+            <div class="handle-item">
+                <p>序号2</p>
+                <button data-item="2" data-type="z-index">auto</button>
+                <button data-item="2" data-type="z-index">-1</button>
+                <button data-item="2" data-type="z-index">0</button>
+                <button data-item="2" data-type="z-index">1</button>
+                <button data-item="2" data-type="z-index">2</button>
+                <button data-item="2" data-type="z-index">3</button>
+                <button data-item="2" data-type="z-index">4</button>
+            </div>
+            <div class="handle-item">
+                <p>序号3</p>
+                <button data-item="3" data-type="z-index">auto</button>
+                <button data-item="3" data-type="z-index">-1</button>
+                <button data-item="3" data-type="z-index">0</button>
+                <button data-item="3" data-type="z-index">1</button>
+                <button data-item="3" data-type="z-index">2</button>
+                <button data-item="3" data-type="z-index">3</button>
+                <button data-item="3" data-type="z-index">4</button>
+            </div>
+            <div class="handle-item">
+                <p>序号4</p>
+                <button data-item="4" data-type="z-index">auto</button>
+                <button data-item="4" data-type="z-index">-1</button>
+                <button data-item="4" data-type="z-index">0</button>
+                <button data-item="4" data-type="z-index">1</button>
+                <button data-item="4" data-type="z-index">2</button>
+                <button data-item="4" data-type="z-index">3</button>
+                <button data-item="4" data-type="z-index">4</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="case-box" data-case="f6">
+    <div class="show-case-wrap">
+        <div class="case">
+            <div class="case-main" style="height: 200px;width: 200px;border: 1px solid black;padding: 10px;position: relative;background-color: pink;z-index:0;">
+                我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字我是父级的文字
+                <div class="case-item" style="position: absolute;height: 100px;width: 100px;background-color: lightgreen;border: 2px solid black;top: 20px;left: 20px;">我是子级的文字</div>
+            </div>
+        </div>
+        <div class="reset">
+            重置
+        </div>
+        <div class="handle">
+            <div class="handle-item">
+                <p>父级红色框</p>
+                <button data-type="z-index">auto</button>
+                <button data-type="z-index">-1</button>
+                <button data-type="z-index">0</button>
+                <button data-type="z-index">1</button>
+                <button data-type="z-index">2</button>
+            </div>
+            <div class="handle-item">
+                <p>子级绿色框</p>
+                <button data-item="1" data-type="z-index">auto</button>
+                <button data-item="1" data-type="z-index">-1</button>
+                <button data-item="1" data-type="z-index">0</button>
+                <button data-item="1" data-type="z-index">1</button>
+                <button data-item="1" data-type="z-index">2</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="../../js/jquery-3.3.1.min.js"></script>
 <script src="../../js/common.js"></script>
 </body>
