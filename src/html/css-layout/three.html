@@ -23,12 +23,6 @@
 </head>
 <body>
 <style>
-    .f1 .parent{overflow: hidden;zoom: 1;}
-    .f1 .left{position: relative;float: left;width: 100px;}
-    .f1 .rightWrap{float: left;width: 100%;margin-left: -100px;}
-    .f1 .right{margin-left: 120px;}
-</style>
-<style>
     body,p{margin: 0;}
     .case-box0 .top,.case-box0 .bottom{
         height: 30px;
@@ -55,6 +49,7 @@
         right: -120px;
     }
 </style>
+<h3>圣杯布局</h3>
 <div class="parent case-box0 case-box" id="parent" data-case="f1" style="background-color: lightgrey;">
     <div class="top" style="background-color: lightblue;">
         <p>top</p>
@@ -92,6 +87,8 @@
     .case-box1 .left{margin-left: -100%;}
     .case-box1 .right{margin-left: -100px;}
 </style>
+
+<h3>双飞翼布局</h3>
 
 <div class="parent case-box case-box1" data-case="f2" id="parent1" style="background-color: lightgrey;">
     <div class="top" style="background-color: lightblue;">
@@ -137,6 +134,8 @@
     .case-box2 .right{margin-left: -100px;}
 </style>
 
+<h3>float + box-sizing + background-clip</h3>
+
 <div class="parent case-box case-box2" data-case="f3" id="parent2" style="background-color: lightgrey;">
     <div class="top" style="background-color: lightblue;">
         <p>top</p>
@@ -180,6 +179,7 @@
         right: 120px;
     }
 </style>
+<h3>absolute</h3>
 <div class="parent case-box case-box3" id="parent3" data-case="f4" style="background-color: lightgrey;">
     <div class="top" style="background-color: lightblue;">
         <p>top</p>
@@ -213,7 +213,7 @@
         margin: 0 20px;
     }
 </style>
-
+<h3>flex</h3>
 <div class="parent case-box case-box4" id="parent4" data-case="f5" style="background-color: lightgrey;">
     <div class="top" style="background-color: lightblue;">
         <p>top</p>
@@ -241,7 +241,7 @@
     .case-box5 .middle{display:grid;grid-template-columns:100px 1fr 100px;grid-gap:20px;}
     .case-box5 .main{grid-area:1/2/2/3;}
 </style>
-
+<h3>grid</h3>
 <div class="parent case-box case-box5" id="parent5" data-case="f6" style="background-color: lightgrey;">
     <div class="top" style="background-color: lightblue;">
         <p>top</p>
